@@ -24,8 +24,8 @@ public class principal extends javax.swing.JFrame {
         B7 = new javax.swing.JButton();
         B8 = new javax.swing.JButton();
         B9 = new javax.swing.JButton();
-        B0 = new javax.swing.JButton();
         Bretroceso = new javax.swing.JButton();
+        B0 = new javax.swing.JButton();
         Bdot = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         Lresultado = new javax.swing.JLabel();
@@ -37,9 +37,8 @@ public class principal extends javax.swing.JFrame {
         Bmulti = new javax.swing.JButton();
         Bdivision = new javax.swing.JButton();
         Bigual = new javax.swing.JButton();
-        Lprincipal = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
         Belevado = new javax.swing.JButton();
+        Lprincipal = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
@@ -139,6 +138,15 @@ public class principal extends javax.swing.JFrame {
         });
         jPanel2.add(B9);
 
+        Bretroceso.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        Bretroceso.setText("←");
+        Bretroceso.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BretrocesoActionPerformed(evt);
+            }
+        });
+        jPanel2.add(Bretroceso);
+
         B0.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
         B0.setText("0");
         B0.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -148,15 +156,6 @@ public class principal extends javax.swing.JFrame {
             }
         });
         jPanel2.add(B0);
-
-        Bretroceso.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-        Bretroceso.setText("←");
-        Bretroceso.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BretrocesoActionPerformed(evt);
-            }
-        });
-        jPanel2.add(Bretroceso);
 
         Bdot.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
         Bdot.setText(".");
@@ -187,7 +186,7 @@ public class principal extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(Lresultado2, javax.swing.GroupLayout.DEFAULT_SIZE, 488, Short.MAX_VALUE)
+                    .addComponent(Lresultado2, javax.swing.GroupLayout.DEFAULT_SIZE, 498, Short.MAX_VALUE)
                     .addComponent(Lresultado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -201,7 +200,7 @@ public class principal extends javax.swing.JFrame {
         );
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(60, 20, 500, 90);
+        jPanel1.setBounds(60, 20, 510, 90);
 
         jPanel3.setLayout(new java.awt.GridLayout(4, 1));
 
@@ -260,36 +259,20 @@ public class principal extends javax.swing.JFrame {
         });
         jPanel3.add(Bigual);
 
-        getContentPane().add(jPanel3);
-        jPanel3.setBounds(380, 140, 170, 390);
-        getContentPane().add(Lprincipal);
-        Lprincipal.setBounds(10, 0, 630, 0);
-
+        Belevado.setBackground(new java.awt.Color(255, 255, 255));
         Belevado.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
-        Belevado.setText("^");
+        Belevado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Proyecto_2_Calculadora/Pictures/XelevadoaY.png"))); // NOI18N
         Belevado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BelevadoActionPerformed(evt);
             }
         });
+        jPanel3.add(Belevado);
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(Belevado, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 5, Short.MAX_VALUE))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(Belevado, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 193, Short.MAX_VALUE))
-        );
-
-        getContentPane().add(jPanel4);
-        jPanel4.setBounds(550, 140, 90, 290);
+        getContentPane().add(jPanel3);
+        jPanel3.setBounds(380, 140, 170, 290);
+        getContentPane().add(Lprincipal);
+        Lprincipal.setBounds(10, 0, 630, 0);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -498,6 +481,5 @@ public class principal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     // End of variables declaration//GEN-END:variables
 }
