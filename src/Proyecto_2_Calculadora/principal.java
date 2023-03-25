@@ -10,7 +10,6 @@ public class principal extends javax.swing.JFrame {
         initComponents();
     }
 
-    @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -375,8 +374,6 @@ public class principal extends javax.swing.JFrame {
     private void B1ActionPerformed(java.awt.event.ActionEvent evt) {
         Lresultado.setText(Lresultado.getText() + "1");
         AlmacenarValores();
-        float resultado = (float) Math.pow(valor1, valor2);
-        Lresultado.setText(formatearFloat(resultado));
     }
 
     private void B2ActionPerformed(java.awt.event.ActionEvent evt) {
