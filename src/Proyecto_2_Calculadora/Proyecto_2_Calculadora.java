@@ -7,7 +7,7 @@ public class Proyecto_2_Calculadora {
 
     principal inicio = new principal();
     // calculadora.setLocationRelativeTo(calculadora);
-    inicio.setSize(630, 500);
+    inicio.setSize(575, 600);
 
     inicio.setVisible(true);
 

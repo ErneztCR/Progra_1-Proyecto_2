@@ -1,5 +1,7 @@
 package Proyecto_2_Calculadora;
 
+import javax.swing.JOptionPane;
+
 public class principal extends javax.swing.JFrame {
 
     String operador = "";
@@ -14,160 +16,46 @@ public class principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        PanelNumerico = new javax.swing.JPanel();
-        B1 = new javax.swing.JButton();
-        B2 = new javax.swing.JButton();
-        B3 = new javax.swing.JButton();
-        B4 = new javax.swing.JButton();
-        B5 = new javax.swing.JButton();
-        B6 = new javax.swing.JButton();
-        B7 = new javax.swing.JButton();
-        B8 = new javax.swing.JButton();
-        B9 = new javax.swing.JButton();
-        Bretroceso = new javax.swing.JButton();
-        B0 = new javax.swing.JButton();
-        Bdot = new javax.swing.JButton();
         PanelDisplay = new javax.swing.JPanel();
         Lresultado = new javax.swing.JLabel();
         Lresultado2 = new javax.swing.JLabel();
-        PanelOperaciones = new javax.swing.JPanel();
-        Bplus = new javax.swing.JButton();
-        BCE = new javax.swing.JButton();
-        Bminus = new javax.swing.JButton();
-        Bmulti = new javax.swing.JButton();
-        Bdivision = new javax.swing.JButton();
-        Bigual = new javax.swing.JButton();
-        Belevado = new javax.swing.JButton();
         Lprincipal = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        BCE = new javax.swing.JButton();
+        Bretroceso = new javax.swing.JButton();
+        Bdivision = new javax.swing.JButton();
+        Bmulti = new javax.swing.JButton();
+        Bminus = new javax.swing.JButton();
+        Bplus = new javax.swing.JButton();
+        Bporcentaje = new javax.swing.JButton();
+        Bigual = new javax.swing.JButton();
+        Belevado2 = new javax.swing.JButton();
+        Braiz = new javax.swing.JButton();
+        Belevado = new javax.swing.JButton();
+        Bpi = new javax.swing.JButton();
+        Bdot = new javax.swing.JButton();
+        B7 = new javax.swing.JButton();
+        B8 = new javax.swing.JButton();
+        B9 = new javax.swing.JButton();
+        B4 = new javax.swing.JButton();
+        B5 = new javax.swing.JButton();
+        B6 = new javax.swing.JButton();
+        B1 = new javax.swing.JButton();
+        B2 = new javax.swing.JButton();
+        B3 = new javax.swing.JButton();
+        B0 = new javax.swing.JButton();
+        B10 = new javax.swing.JButton();
+        B11 = new javax.swing.JButton();
+        B12 = new javax.swing.JButton();
+        B13 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
-        setPreferredSize(new java.awt.Dimension(622, 559));
         setSize(new java.awt.Dimension(622, 559));
         getContentPane().setLayout(null);
-
-        PanelNumerico.setLayout(new java.awt.GridLayout(4, 0));
-
-        B1.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
-        B1.setText("1");
-        B1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        B1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                B1ActionPerformed(evt);
-            }
-        });
-        PanelNumerico.add(B1);
-
-        B2.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
-        B2.setText("2");
-        B2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        B2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                B2ActionPerformed(evt);
-            }
-        });
-        PanelNumerico.add(B2);
-
-        B3.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
-        B3.setText("3");
-        B3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        B3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                B3ActionPerformed(evt);
-            }
-        });
-        PanelNumerico.add(B3);
-
-        B4.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
-        B4.setText("4");
-        B4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        B4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                B4ActionPerformed(evt);
-            }
-        });
-        PanelNumerico.add(B4);
-
-        B5.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
-        B5.setText("5");
-        B5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        B5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                B5ActionPerformed(evt);
-            }
-        });
-        PanelNumerico.add(B5);
-
-        B6.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
-        B6.setText("6");
-        B6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        B6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                B6ActionPerformed(evt);
-            }
-        });
-        PanelNumerico.add(B6);
-
-        B7.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
-        B7.setText("7");
-        B7.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        B7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                B7ActionPerformed(evt);
-            }
-        });
-        PanelNumerico.add(B7);
-
-        B8.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
-        B8.setText("8");
-        B8.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        B8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                B8ActionPerformed(evt);
-            }
-        });
-        PanelNumerico.add(B8);
-
-        B9.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
-        B9.setText("9");
-        B9.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        B9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                B9ActionPerformed(evt);
-            }
-        });
-        PanelNumerico.add(B9);
-
-        Bretroceso.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-        Bretroceso.setText("←");
-        Bretroceso.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BretrocesoActionPerformed(evt);
-            }
-        });
-        PanelNumerico.add(Bretroceso);
-
-        B0.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
-        B0.setText("0");
-        B0.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        B0.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                B0ActionPerformed(evt);
-            }
-        });
-        PanelNumerico.add(B0);
-
-        Bdot.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
-        Bdot.setText(".");
-        Bdot.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BdotActionPerformed(evt);
-            }
-        });
-        PanelNumerico.add(Bdot);
-
-        getContentPane().add(PanelNumerico);
-        PanelNumerico.setBounds(70, 140, 280, 290);
 
         PanelDisplay.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -185,9 +73,11 @@ public class principal extends javax.swing.JFrame {
             PanelDisplayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelDisplayLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(PanelDisplayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(Lresultado2, javax.swing.GroupLayout.DEFAULT_SIZE, 498, Short.MAX_VALUE)
-                    .addComponent(Lresultado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(PanelDisplayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Lresultado2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(PanelDisplayLayout.createSequentialGroup()
+                        .addComponent(Lresultado, javax.swing.GroupLayout.PREFERRED_SIZE, 392, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         PanelDisplayLayout.setVerticalGroup(
@@ -200,79 +90,364 @@ public class principal extends javax.swing.JFrame {
         );
 
         getContentPane().add(PanelDisplay);
-        PanelDisplay.setBounds(60, 20, 510, 90);
+        PanelDisplay.setBounds(80, 20, 400, 90);
+        getContentPane().add(Lprincipal);
+        Lprincipal.setBounds(10, 0, 630, 0);
 
-        PanelOperaciones.setLayout(new java.awt.GridLayout(4, 1));
+        jPanel1.setLayout(null);
 
-        Bplus.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
-        Bplus.setText("+");
-        Bplus.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BplusActionPerformed(evt);
-            }
-        });
-        PanelOperaciones.add(Bplus);
-
-        BCE.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        BCE.setBackground(new java.awt.Color(204, 204, 204));
+        BCE.setFont(new java.awt.Font("Stencil", 0, 33)); // NOI18N
         BCE.setText("CE");
+        BCE.setAutoscrolls(true);
+        BCE.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         BCE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BCEActionPerformed(evt);
             }
         });
-        PanelOperaciones.add(BCE);
+        jPanel1.add(BCE);
+        BCE.setBounds(0, 0, 80, 80);
 
-        Bminus.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
-        Bminus.setText("-");
-        Bminus.addActionListener(new java.awt.event.ActionListener() {
+        Bretroceso.setBackground(new java.awt.Color(204, 204, 204));
+        Bretroceso.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        Bretroceso.setText("←");
+        Bretroceso.setAutoscrolls(true);
+        Bretroceso.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Bretroceso.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BminusActionPerformed(evt);
+                BretrocesoActionPerformed(evt);
             }
         });
-        PanelOperaciones.add(Bminus);
+        jPanel1.add(Bretroceso);
+        Bretroceso.setBounds(80, 0, 80, 80);
 
-        Bmulti.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
-        Bmulti.setText("x");
-        Bmulti.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BmultiActionPerformed(evt);
-            }
-        });
-        PanelOperaciones.add(Bmulti);
-
+        Bdivision.setBackground(new java.awt.Color(204, 204, 204));
         Bdivision.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
         Bdivision.setText("/");
+        Bdivision.setAutoscrolls(true);
+        Bdivision.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Bdivision.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BdivisionActionPerformed(evt);
             }
         });
-        PanelOperaciones.add(Bdivision);
+        jPanel1.add(Bdivision);
+        Bdivision.setBounds(320, 0, 80, 80);
+
+        Bmulti.setBackground(new java.awt.Color(204, 204, 204));
+        Bmulti.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        Bmulti.setText("x");
+        Bmulti.setAutoscrolls(true);
+        Bmulti.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Bmulti.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BmultiActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Bmulti);
+        Bmulti.setBounds(320, 80, 80, 80);
+
+        Bminus.setBackground(new java.awt.Color(204, 204, 204));
+        Bminus.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        Bminus.setText("-");
+        Bminus.setAutoscrolls(true);
+        Bminus.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Bminus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BminusActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Bminus);
+        Bminus.setBounds(320, 160, 80, 80);
+
+        Bplus.setBackground(new java.awt.Color(204, 204, 204));
+        Bplus.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        Bplus.setText("+");
+        Bplus.setAutoscrolls(true);
+        Bplus.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Bplus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BplusActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Bplus);
+        Bplus.setBounds(320, 240, 80, 80);
+
+        Bporcentaje.setBackground(new java.awt.Color(204, 204, 204));
+        Bporcentaje.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        Bporcentaje.setText("%");
+        Bporcentaje.setAutoscrolls(true);
+        Bporcentaje.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Bporcentaje.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BporcentajeActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Bporcentaje);
+        Bporcentaje.setBounds(160, 0, 80, 80);
 
         Bigual.setBackground(new java.awt.Color(204, 204, 204));
         Bigual.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
         Bigual.setText("=");
+        Bigual.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Bigual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BigualActionPerformed(evt);
             }
         });
-        PanelOperaciones.add(Bigual);
+        jPanel1.add(Bigual);
+        Bigual.setBounds(320, 320, 80, 80);
 
-        Belevado.setBackground(new java.awt.Color(255, 255, 255));
+        Belevado2.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        Belevado2.setForeground(new java.awt.Color(51, 51, 51));
+        Belevado2.setText("^2");
+        Belevado2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Belevado2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Belevado2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Belevado2);
+        Belevado2.setBounds(240, 160, 80, 80);
+
+        Braiz.setBackground(new java.awt.Color(204, 204, 204));
+        Braiz.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        Braiz.setText("\t√");
+        Braiz.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Braiz.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BraizActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Braiz);
+        Braiz.setBounds(240, 0, 80, 80);
+
         Belevado.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        Belevado.setForeground(new java.awt.Color(51, 51, 51));
         Belevado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Proyecto_2_Calculadora/Pictures/XelevadoaY.png"))); // NOI18N
+        Belevado.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Belevado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BelevadoActionPerformed(evt);
             }
         });
-        PanelOperaciones.add(Belevado);
+        jPanel1.add(Belevado);
+        Belevado.setBounds(240, 240, 80, 80);
 
-        getContentPane().add(PanelOperaciones);
-        PanelOperaciones.setBounds(380, 140, 170, 290);
-        getContentPane().add(Lprincipal);
-        Lprincipal.setBounds(10, 0, 630, 0);
+        Bpi.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        Bpi.setForeground(new java.awt.Color(51, 51, 51));
+        Bpi.setText("π");
+        Bpi.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Bpi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BpiActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Bpi);
+        Bpi.setBounds(240, 80, 80, 80);
+
+        Bdot.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        Bdot.setForeground(new java.awt.Color(51, 51, 51));
+        Bdot.setText(".");
+        Bdot.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Bdot.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BdotActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Bdot);
+        Bdot.setBounds(0, 320, 80, 80);
+
+        B7.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        B7.setForeground(new java.awt.Color(51, 51, 51));
+        B7.setText("7");
+        B7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        B7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B7ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(B7);
+        B7.setBounds(0, 80, 80, 80);
+
+        B8.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        B8.setForeground(new java.awt.Color(51, 51, 51));
+        B8.setText("8");
+        B8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        B8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B8ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(B8);
+        B8.setBounds(80, 80, 80, 80);
+
+        B9.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        B9.setForeground(new java.awt.Color(51, 51, 51));
+        B9.setText("9");
+        B9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        B9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B9ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(B9);
+        B9.setBounds(160, 80, 80, 80);
+
+        B4.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        B4.setForeground(new java.awt.Color(51, 51, 51));
+        B4.setText("4");
+        B4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        B4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(B4);
+        B4.setBounds(0, 160, 80, 80);
+
+        B5.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        B5.setForeground(new java.awt.Color(51, 51, 51));
+        B5.setText("5");
+        B5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        B5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B5ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(B5);
+        B5.setBounds(80, 160, 80, 80);
+
+        B6.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        B6.setForeground(new java.awt.Color(51, 51, 51));
+        B6.setText("6");
+        B6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        B6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B6ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(B6);
+        B6.setBounds(160, 160, 80, 80);
+
+        B1.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        B1.setForeground(new java.awt.Color(51, 51, 51));
+        B1.setText("1");
+        B1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        B1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(B1);
+        B1.setBounds(0, 240, 80, 80);
+
+        B2.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        B2.setForeground(new java.awt.Color(51, 51, 51));
+        B2.setText("2");
+        B2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        B2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(B2);
+        B2.setBounds(80, 240, 80, 80);
+
+        B3.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        B3.setForeground(new java.awt.Color(51, 51, 51));
+        B3.setText("3");
+        B3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        B3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(B3);
+        B3.setBounds(160, 240, 80, 80);
+
+        B0.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        B0.setForeground(new java.awt.Color(51, 51, 51));
+        B0.setText("0");
+        B0.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        B0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B0ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(B0);
+        B0.setBounds(80, 320, 80, 80);
+
+        B10.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        B10.setText("0");
+        B10.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        B10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B10ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(B10);
+        B10.setBounds(80, 320, 80, 80);
+
+        B11.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        B11.setText("0");
+        B11.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        B11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B11ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(B11);
+        B11.setBounds(80, 320, 80, 80);
+
+        B12.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        B12.setText("0");
+        B12.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        B12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B12ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(B12);
+        B12.setBounds(80, 320, 80, 80);
+
+        B13.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
+        B13.setText("0");
+        B13.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        B13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B13ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(B13);
+        B13.setBounds(80, 320, 80, 80);
+
+        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(51, 51, 51));
+        jButton1.setText("(");
+        jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1);
+        jButton1.setBounds(160, 320, 80, 80);
+
+        jButton2.setText("jButton1");
+        jPanel1.add(jButton2);
+        jButton2.setBounds(160, 320, 80, 80);
+
+        jButton3.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(51, 51, 51));
+        jButton3.setText(")");
+        jButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.add(jButton3);
+        jButton3.setBounds(240, 320, 80, 80);
+
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(80, 130, 400, 400);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -339,20 +514,71 @@ public class principal extends javax.swing.JFrame {
     }//GEN-LAST:event_BdotActionPerformed
 
     private void BelevadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BelevadoActionPerformed
-       	CambioEstado = true;
+        CambioEstado = true;
         operador = "^";
         Lresultado.setText("");
-        Lresultado2.setText(formatearFloat(valor1) + " " + operador); 
+        Lresultado2.setText(formatearFloat(valor1) + " " + operador);
+        
     }//GEN-LAST:event_BelevadoActionPerformed
 
     private void BretrocesoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BretrocesoActionPerformed
-        String currentValue = Lresultado.getText();
-        if (currentValue.equals("")) {
-        return;
-}
-        String newValue = currentValue.substring(0, currentValue.length() - 1);
-        Lresultado.setText(newValue);
+      String resultado = Lresultado.getText();
+      if (resultado.length() > 0) {
+      resultado = resultado.substring(0, resultado.length() - 1);
+      Lresultado.setText(resultado);
+    }
+    
     }//GEN-LAST:event_BretrocesoActionPerformed
+
+    private void Belevado2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Belevado2ActionPerformed
+        CambioEstado = true;
+        operador = "^2";
+        valor1 = Float.parseFloat(Lresultado.getText());
+    
+    }//GEN-LAST:event_Belevado2ActionPerformed
+
+    private void BraizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BraizActionPerformed
+        CambioEstado = true;
+        operador = "√";
+        float num = Float.parseFloat(Lresultado.getText());
+        valor1 = num;
+        Lresultado2.setText("√" + formatearFloat(num) + " " + operador);
+    }//GEN-LAST:event_BraizActionPerformed
+
+    private void BpiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BpiActionPerformed
+        CambioEstado = true;
+        operador = "π";
+        Lresultado.setText(String.valueOf(Math.PI));
+    }//GEN-LAST:event_BpiActionPerformed
+
+    private void BporcentajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BporcentajeActionPerformed
+        CambioEstado = true;
+        operador = "%";
+        float num = Float.parseFloat(Lresultado.getText());
+        valor1 = num;
+        Lresultado.setText("");
+        Lresultado2.setText(formatearFloat(valor1) + " " + operador);  
+    }//GEN-LAST:event_BporcentajeActionPerformed
+
+    private void B10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_B10ActionPerformed
+
+    private void B11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_B11ActionPerformed
+
+    private void B12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_B12ActionPerformed
+
+    private void B13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_B13ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     private void B1ActionPerformed(java.awt.event.ActionEvent evt) {
         Lresultado.setText(Lresultado.getText() + "1");
@@ -365,12 +591,14 @@ public class principal extends javax.swing.JFrame {
     }
 
     private void BCEActionPerformed(java.awt.event.ActionEvent evt) {
+          
         Lresultado.setText("");
         Lresultado2.setText("");
         valor1 = 0;
         valor2 = 0;
         CambioEstado = false;
     }
+    
 
     private void BplusActionPerformed(java.awt.event.ActionEvent evt) {
         CambioEstado = true;
@@ -403,9 +631,27 @@ public class principal extends javax.swing.JFrame {
                 total = valor1 / valor2;
                 break;
             case "^": 
-            total = (float) Math.pow(valor1, valor2);
-            break;    
-        }
+                Elevado eleva = new Elevado(valor1,valor2);
+                total = eleva.Eleva();
+                break;
+            case "^2": 
+                Elevado2 eleva2 = new Elevado2(valor1,valor2);
+                total = eleva2.Eleva2();
+                break;   
+            case "√":
+                Raizcuadrada raiz = new Raizcuadrada(valor2);
+                total = raiz.Raiz();
+                break;                
+            case "π":
+                PI pi = new PI(valor1);
+                total = pi.Pi();
+                break;  
+                case "%":
+                Porcentaje porcentaj = new Porcentaje(valor1, valor2);
+                total = porcentaj.porcentaje();
+                break;  
+                
+            }
         Lresultado2.setText(formatearFloat(valor1) + " " + operador + " " + formatearFloat(valor2) + " =");
         Lresultado.setText(formatearFloat(total));
         valor1 = total;
@@ -458,6 +704,10 @@ public class principal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton B0;
     private javax.swing.JButton B1;
+    private javax.swing.JButton B10;
+    private javax.swing.JButton B11;
+    private javax.swing.JButton B12;
+    private javax.swing.JButton B13;
     private javax.swing.JButton B2;
     private javax.swing.JButton B3;
     private javax.swing.JButton B4;
@@ -470,16 +720,22 @@ public class principal extends javax.swing.JFrame {
     private javax.swing.JButton Bdivision;
     private javax.swing.JButton Bdot;
     private javax.swing.JButton Belevado;
+    private javax.swing.JButton Belevado2;
     private javax.swing.JButton Bigual;
     private javax.swing.JButton Bminus;
     private javax.swing.JButton Bmulti;
+    private javax.swing.JButton Bpi;
     private javax.swing.JButton Bplus;
+    private javax.swing.JButton Bporcentaje;
+    private javax.swing.JButton Braiz;
     private javax.swing.JButton Bretroceso;
     private javax.swing.JLabel Lprincipal;
     private javax.swing.JLabel Lresultado;
     private javax.swing.JLabel Lresultado2;
     private javax.swing.JPanel PanelDisplay;
-    private javax.swing.JPanel PanelNumerico;
-    private javax.swing.JPanel PanelOperaciones;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
