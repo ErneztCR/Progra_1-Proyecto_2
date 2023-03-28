@@ -14,7 +14,7 @@ public class principal extends javax.swing.JFrame {
 
     // <editor-fold defaultstate="collapsed" desc="Generated
     // <editor-fold defaultstate="collapsed" desc="Generated
-    // Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         PanelDisplay = new javax.swing.JPanel();
@@ -24,7 +24,6 @@ public class principal extends javax.swing.JFrame {
         PanelBotonera = new javax.swing.JPanel();
         BCE = new javax.swing.JButton();
         Bretroceso = new javax.swing.JButton();
-        Bporcentaje = new javax.swing.JButton();
         Bdot = new javax.swing.JButton();
         B7 = new javax.swing.JButton();
         B8 = new javax.swing.JButton();
@@ -65,25 +64,22 @@ public class principal extends javax.swing.JFrame {
         javax.swing.GroupLayout PanelDisplayLayout = new javax.swing.GroupLayout(PanelDisplay);
         PanelDisplay.setLayout(PanelDisplayLayout);
         PanelDisplayLayout.setHorizontalGroup(
-                PanelDisplayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(PanelDisplayLayout.createSequentialGroup()
-                                .addContainerGap()
-                                .addGroup(PanelDisplayLayout
-                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(Lresultado2, javax.swing.GroupLayout.DEFAULT_SIZE, 375,
-                                                Short.MAX_VALUE)
-                                        .addComponent(Lresultado, javax.swing.GroupLayout.DEFAULT_SIZE,
-                                                javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addContainerGap(19, Short.MAX_VALUE)));
+            PanelDisplayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelDisplayLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(PanelDisplayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(Lresultado2, javax.swing.GroupLayout.DEFAULT_SIZE, 375, Short.MAX_VALUE)
+                    .addComponent(Lresultado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
+        );
         PanelDisplayLayout.setVerticalGroup(
-                PanelDisplayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelDisplayLayout.createSequentialGroup()
-                                .addGap(0, 8, Short.MAX_VALUE)
-                                .addComponent(Lresultado2, javax.swing.GroupLayout.PREFERRED_SIZE, 28,
-                                        javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Lresultado, javax.swing.GroupLayout.PREFERRED_SIZE, 48,
-                                        javax.swing.GroupLayout.PREFERRED_SIZE)));
+            PanelDisplayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelDisplayLayout.createSequentialGroup()
+                .addGap(0, 8, Short.MAX_VALUE)
+                .addComponent(Lresultado2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Lresultado, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         getContentPane().add(PanelDisplay);
         PanelDisplay.setBounds(80, 20, 400, 90);
@@ -103,7 +99,7 @@ public class principal extends javax.swing.JFrame {
             }
         });
         PanelBotonera.add(BCE);
-        BCE.setBounds(0, 0, 160, 80);
+        BCE.setBounds(0, 0, 240, 80);
 
         Bretroceso.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
         Bretroceso.setForeground(new java.awt.Color(51, 51, 51));
@@ -117,19 +113,6 @@ public class principal extends javax.swing.JFrame {
         });
         PanelBotonera.add(Bretroceso);
         Bretroceso.setBounds(160, 320, 80, 80);
-
-        Bporcentaje.setBackground(new java.awt.Color(204, 204, 204));
-        Bporcentaje.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
-        Bporcentaje.setText("%");
-        Bporcentaje.setAutoscrolls(true);
-        Bporcentaje.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        Bporcentaje.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BporcentajeActionPerformed(evt);
-            }
-        });
-        PanelBotonera.add(Bporcentaje);
-        Bporcentaje.setBounds(160, 0, 80, 80);
 
         Bdot.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
         Bdot.setForeground(new java.awt.Color(51, 51, 51));
@@ -358,8 +341,7 @@ public class principal extends javax.swing.JFrame {
 
         Belevado2.setBackground(new java.awt.Color(204, 204, 204));
         Belevado2.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
-        Belevado2.setIcon(
-                new javax.swing.ImageIcon(getClass().getResource("/Proyecto_2_Calculadora/Pictures/Xala2.png"))); // NOI18N
+        Belevado2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Proyecto_2_Calculadora/Pictures/Xala2.png"))); // NOI18N
         Belevado2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Belevado2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -371,8 +353,7 @@ public class principal extends javax.swing.JFrame {
 
         Belevado.setBackground(new java.awt.Color(204, 204, 204));
         Belevado.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
-        Belevado.setIcon(
-                new javax.swing.ImageIcon(getClass().getResource("/Proyecto_2_Calculadora/Pictures/XelevadoaY.png"))); // NOI18N
+        Belevado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Proyecto_2_Calculadora/Pictures/XelevadoaY.png"))); // NOI18N
         Belevado.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Belevado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -458,13 +439,21 @@ public class principal extends javax.swing.JFrame {
     }// GEN-LAST:event_BelevadoActionPerformed
 
     private void BretrocesoActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_BretrocesoActionPerformed
-        String resultado = Lresultado.getText();
-        if (resultado.length() > 0) {
-            resultado = resultado.substring(0, resultado.length() - 1);
-            Lresultado.setText(resultado);
-        }
+    String currentValue = Lresultado.getText();
+    if (currentValue.equals("")) {
+        return;
+    }
+    String newValue = currentValue.substring(0, currentValue.length() - 1);
+    Lresultado.setText(newValue);
+    if (CambioEstado) {
+        CambioEstado = false;
+    } else if (operador.equals("")) {
+        valor1 = Float.parseFloat(newValue);
+    } else {
+        valor2 = Float.parseFloat(newValue);
+    }
 
-    }// GEN-LAST:event_BretrocesoActionPerformed
+    }// GEN-LAST:event_BretrocesoActionPerformed 
 
     private void Belevado2ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_Belevado2ActionPerformed
         CambioEstado = true;
@@ -486,16 +475,7 @@ public class principal extends javax.swing.JFrame {
         operador = "π";
         Lresultado.setText(String.valueOf(Math.PI));
     }// GEN-LAST:event_BpiActionPerformed
-
-    private void BporcentajeActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_BporcentajeActionPerformed
-        CambioEstado = true;
-        operador = "%";
-        float num = Float.parseFloat(Lresultado.getText());
-        valor1 = num;
-        Lresultado.setText("");
-        Lresultado2.setText(formatearFloat(valor1) + " " + operador);
-    }// GEN-LAST:event_BporcentajeActionPerformed
-
+    
     private void B1ActionPerformed(java.awt.event.ActionEvent evt) {
         Lresultado.setText(Lresultado.getText() + "1");
         AlmacenarValores();
@@ -562,16 +542,11 @@ public class principal extends javax.swing.JFrame {
                 PI pi = new PI(valor1);
                 total = pi.Pi();
                 break;
-            case "%":
-                Porcentaje porcentaj = new Porcentaje(valor1, valor2);
-                total = porcentaj.porcentaje();
-                break;
-
         }
-        Lresultado2.setText(formatearFloat(valor1) + " " + operador + " " + formatearFloat(valor2) + " =");
-        Lresultado.setText(formatearFloat(total));
-        valor1 = total;
-        valor2 = 0;
+            Lresultado2.setText(formatearFloat(valor1) + " " + operador + " " + formatearFloat(valor2) + " =");
+            Lresultado.setText(formatearFloat(total));
+            valor1 = total;
+            valor2 = 0;
     }
 
     private void BmultiActionPerformed(java.awt.event.ActionEvent evt) {
@@ -638,7 +613,6 @@ public class principal extends javax.swing.JFrame {
     private javax.swing.JButton Bmulti;
     private javax.swing.JButton Bpi;
     private javax.swing.JButton Bplus;
-    private javax.swing.JButton Bporcentaje;
     private javax.swing.JButton Braiz;
     private javax.swing.JButton Bretroceso;
     private javax.swing.JLabel Lprincipal;
